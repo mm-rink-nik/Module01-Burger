@@ -288,9 +288,9 @@ p.banner-text {
     background-color: #F37335;
 }
 .menu-grid-icon {
+    background-image: url(../images/cart-menu.svg);
     position: absolute;
     display: inline-block;
-    background-image: url(../images/cart-menu.svg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
