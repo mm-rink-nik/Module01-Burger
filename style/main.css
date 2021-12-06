@@ -133,6 +133,9 @@ header {
 .breadcrumbs li:first-child a::before {
     display: none;
 }
+
+/* banner */
+
 .title {
     font-weight: 700;
     font-size: 79px;
@@ -204,6 +207,9 @@ p.banner-text {
     background-color: transparent;
     color: #FBB731;
 }
+
+/* section 1 */
+
 .menu-header {
     display: flex;
     align-items: center;
@@ -305,6 +311,14 @@ p.banner-text {
 .additional {
     margin-top: 77px;
     margin-bottom: 37px;
+}
+.additionaly {
+    margin-top: 77px;
+    max-width: 1182px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 142px
 }
 /* footer */
 
@@ -453,7 +467,7 @@ h1 span {
 .main img {
     width: 829px;
     position: absolute;
-    right: -168px;
+    right: -200px;
 }
 .promo {
     padding-top: 186px;
