@@ -47,6 +47,7 @@ header {
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: 0.2s;
 }
 .header-nav a:hover {
     color: #FFC725;
@@ -115,7 +116,7 @@ header {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-
+    transition: 0.2s;
 }
 .breadcrumbs a:hover {
     color: #FFC725;
@@ -154,7 +155,7 @@ header {
 .banner-box {
     background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: 0 center;
     background-repeat: no-repeat;
     padding: 100px 100px 120px;
     color: #FFFFFF;
@@ -200,6 +201,7 @@ p.banner-text {
     background: #FBB731;
     padding: 18px 25px;
     border: 1px solid #FBB731;
+    transition: 0.3s;
 }
 .banner-link:hover {
     background-color: transparent;
@@ -284,6 +286,14 @@ p.banner-text {
     margin: 19px auto 0;
     display: flex;
     margin-bottom: 0;
+    transition: 0.2s;
+}
+.menu-grid-text {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E2F40;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -361,6 +371,7 @@ p.banner-text {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+    transition: 0.2s;
 }
 .footer-list a:hover {
     color: #FBB731;
@@ -382,6 +393,7 @@ p.banner-text {
     font-size: 20px;
     color: #fbb731;
     font-weight: 900;
+    transition: 0.2s;
 }
 .footer-list-tel a:hover {
     color: #DEDEDE;    
@@ -389,7 +401,30 @@ p.banner-text {
 .footer-list {
     padding-left: 0;
 }
-
+.button-up {
+    background-color: #fbb731;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E2F40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    border: 1px solid #fbb731;
+    transition: 0.3s;
+}
+.button-up:hover {
+    background-color: #F37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
 /* INDEX HNML */
 
 .main {
@@ -442,10 +477,12 @@ h1 span {
     font-size: 14px;
     font-weight: 700;
     border: 1px solid #FBB731;
+    transition: 0.3s;
 }
 .promo a:hover {
     background-color: transparent;
     color: #FBB731;
+    transition: 0.2s;
 }
 .main a:hover {
     background-color: transparent;
@@ -527,3 +564,32 @@ h1 span {
     margin-top: 0;
 }
 
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+
+
+}
