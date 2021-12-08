@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 76%
+    flex-basis: 68.5%;
 }
 .header-logo {
     display:block;
@@ -39,7 +39,6 @@ header {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    padding-right: 99px;
     gap: 46px;
 }
 .header-nav a {
@@ -134,13 +133,13 @@ header {
     display: none;
 }
 
-/* banner */
+/* section 2 */
 
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 16px;
-    margin-bottom: 20px;
+    margin-top: -16px;
+    margin-bottom: -9px;
     text-transform:capitalize;
 
 }
@@ -160,10 +159,9 @@ header {
     padding: 100px 100px 120px;
     color: #FFFFFF;
     text-align: left;
-    margin-bottom: 79px;
+    margin-bottom: 66px;
 }
 .banner-title {
-    max-width: 95px;
     font-weight: 900;
     font-size: 60px;
     text-align: left;
@@ -221,7 +219,6 @@ p.banner-text {
     line-height: 56px;
     text-transform: uppercase;
     color: #1B2A49;
-    margin-top: 50px;
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -237,12 +234,12 @@ p.banner-text {
     background-size: 12.79px 7.75px;
     background-position: 89% center;
     background-repeat: no-repeat;
-    margin: 34px;
 }
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
+    margin-bottom: 60px;
 }
 .menu-grid-cover {
     width: 100%;
@@ -263,7 +260,7 @@ p.banner-text {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 0px;
     color: #1B2A49;
 }
@@ -281,18 +278,15 @@ p.banner-text {
     background-color: #FBB731;
     border: 1px solid #FBB731;
     border-radius: 5px;
-    padding: 9px 36px;
     text-transform: uppercase;
-    margin-top: 3px;
-    margin-bottom: 22px;
     padding: 10px 35px 10px 57px;
     cursor: pointer;
-    margin: 19px auto;
+    margin: 19px auto 0;
     display: flex;
+    margin-bottom: 0;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
-    color: whitesmoke;
 }
 .menu-grid-icon {
     background-image: url(../images/cart-menu.svg);
@@ -367,7 +361,10 @@ p.banner-text {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
-    
+}
+.footer-list a:hover {
+    color: #FBB731;
+    font-weight: 700; 
 }
 .footer-item span {
     color: #DEDEDE;
@@ -414,9 +411,9 @@ h1 {
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 120px;
-    margin-bottom: 0;
-    margin-top: 0;
+    line-height: 143px;
+    margin-bottom: 30px;
+    margin-top: -67px;
 }
 h1 span {
     color: #FBB731;
@@ -430,7 +427,8 @@ h1 span {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
+    
 }
 .main a,
 .promo a {
@@ -467,7 +465,8 @@ h1 span {
 .main img {
     width: 829px;
     position: absolute;
-    right: -200px;
+    right: -170px;
+    bottom: -10px;
 }
 .promo {
     padding-top: 186px;
